@@ -3,7 +3,7 @@ import processingImage from "@/assets/images/processing.png";
 
 export default function Processing() {
   return (
-    <section className="px-10 py-28 bg-white">
+    <section className="px-6 md:px-10 py-28 bg-white">
 
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
 
@@ -13,7 +13,7 @@ export default function Processing() {
             Processing Standards
           </p>
 
-          <h2 className="text-5xl leading-tight font-medium text-[#1f1f1f]">
+          <h2 className="text-4xl md:text-5xl leading-tight font-medium text-[#1f1f1f]">
             Hygienic processing systems designed for consistency and trust.
           </h2>
 

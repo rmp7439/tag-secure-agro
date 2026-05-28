@@ -3,7 +3,7 @@ import exportImage from "@/assets/images/export.png";
 
 export default function Export() {
   return (
-    <section className="px-10 py-28 bg-[#f8f5f1]">
+    <section className="px-6 md:px-10 py-28 bg-[#f8f5f1]">
 
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
 
@@ -22,7 +22,7 @@ export default function Export() {
             Export & Packaging
           </p>
 
-          <h2 className="text-5xl leading-tight font-medium text-[#1f1f1f]">
+          <h2 className="text-4xl md:text-5xl leading-tight font-medium text-[#1f1f1f]">
             Reliable packaging and export-focused operational systems.
           </h2>
 

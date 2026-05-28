@@ -1,6 +1,6 @@
 export default function CTA() {
   return (
-    <section className="px-10 py-32 bg-[#1f3b2d] text-white overflow-hidden relative">
+    <section className="px-6 md:px-10 py-32 bg-[#1f3b2d] text-white overflow-hidden relative">
 
       <div className="max-w-5xl mx-auto text-center">
 
@@ -8,7 +8,7 @@ export default function CTA() {
           Let’s Connect
         </p>
 
-        <h2 className="text-5xl md:text-6xl leading-tight font-medium">
+        <h2 className="text-4xl md:text-5xl leading-tight font-medium">
           Premium cashew solutions backed by quality-focused operations.
         </h2>
 

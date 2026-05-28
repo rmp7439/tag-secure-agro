@@ -1,6 +1,6 @@
 export default function Vision() {
   return (
-    <section className="px-6 md:px-12 py-28 bg-[#f5f1e8]">
+    <section className="px-6 md:px-10 py-28 bg-[#f5f1e8]">
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
 
@@ -10,7 +10,7 @@ export default function Vision() {
             Our Vision
           </p>
 
-          <h2 className="text-4xl font-bold leading-tight text-[#1f3b2d]">
+          <h2 className="text-4xl md:text-5xl font-bold leading-tight text-[#1f3b2d]">
             To Become a Trusted Global Name in Premium Cashew Processing
           </h2>
 

@@ -4,7 +4,7 @@ import floatingCashews from "@/assets/images/hero-cashew.png";
 
 export default function Hero() {
   return (
-    <section className="relative px-10 py-24 overflow-hidden">
+    <section className="relative px-6 md:px-10 py-24 overflow-hidden">
       <Image
         src={floatingCashews}
         alt="Floating Cashews"
@@ -19,7 +19,7 @@ export default function Hero() {
             Premium Cashew Processing & Export
           </p>
 
-          <h1 className="text-6xl leading-tight font-medium text-[#1f1f1f]">
+          <h1 className="text-4xl md:text-5xl leading-tight font-medium text-[#1f1f1f]">
             Export-grade cashews with trusted processing standards.
           </h1>
 
