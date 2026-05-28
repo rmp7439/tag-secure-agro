@@ -16,6 +16,7 @@ export default function Export() {
               src={exportImage}
               alt="Export Operations"
               fill
+              sizes="(max-width: 768 px) 100vw, 50vw"
               className="object-cover hover:scale-105 transition-all duration-700"
             />
 
