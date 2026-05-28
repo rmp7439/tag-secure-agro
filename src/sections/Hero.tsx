@@ -1,34 +1,54 @@
+import Image from "next/image";
+import heroImage from "@/assets/images/hero-cashew.png";
+import floatingCashews from "@/assets/images/hero-cashew.png";
+
 export default function Hero() {
   return (
-    <section className="min-h-[90vh] flex items-center justify-center px-6 py-20">
-      <div className="max-w-6xl text-center">
-        
-        <p className="uppercase tracking-[0.3em] text-sm text-[#7a5c3e] mb-6">
-          Premium Cashew Processing Excellence
-        </p>
+    <section className="relative px-10 py-24 overflow-hidden">
+      <Image
+        src={floatingCashews}
+        alt="Floating Cashews"
+        width={220}
+        height={220}
+        className="absolute top-10 right-[42%] opacity-20 rotate-12"
+      />
 
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight text-[#1f3b2d]">
-          Premium Cashew Processing Excellence from Gujarat
-        </h1>
+      <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="space-y-8">
+          <p className="uppercase tracking-[0.3em] text-sm text-[#7a6a58]">
+            Premium Cashew Processing & Export
+          </p>
 
-        <p className="max-w-3xl mx-auto mt-8 text-lg leading-8 text-black/70">
-          Tagsecure Agro Private Limited is a modern cashew processing company
-          specializing in premium-grade cashew kernels for domestic and
-          international markets.
-        </p>
+          <h1 className="text-6xl leading-tight font-medium text-[#1f1f1f]">
+            Export-grade cashews with trusted processing standards.
+          </h1>
 
-        <div className="flex flex-col md:flex-row gap-4 justify-center mt-10">
-          
-          <button className="bg-[#1f3b2d] text-white px-8 py-4 rounded-full hover:opacity-90 transition">
-            Explore Products
-          </button>
+          <p className="text-lg text-[#5c5c5c] leading-relaxed max-w-xl">
+            Tagsecure Agro delivers premium-quality cashews through hygienic
+            processing, reliable packaging, and export-focused operational
+            standards.
+          </p>
 
-          <button className="border border-black/20 px-8 py-4 rounded-full hover:bg-black/5 transition">
-            Contact Us
-          </button>
+          <div className="flex gap-4">
+            <button className="bg-[#1f3b2d] text-white px-8 py-4 rounded-full">
+              Explore Products
+            </button>
 
+            <button className="border border-[#1f3b2d] px-8 py-4 rounded-full">
+              Contact Us
+            </button>
+          </div>
         </div>
 
+        <div className="relative h-[650px] rounded-[40px] overflow-hidden">
+          <Image
+            src={heroImage}
+            alt="Premium Cashews"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
       </div>
     </section>
   );

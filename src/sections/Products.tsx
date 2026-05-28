@@ -1,77 +1,67 @@
+import Image from "next/image";
+import productImage from "@/assets/images/product-cashew.png";
+
 export default function Products() {
   return (
-    <section className="px-6 md:px-12 py-24 bg-white">
+    <section className="px-10 py-28 bg-[#f8f5f1]">
 
       <div className="max-w-7xl mx-auto">
 
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+        <div className="max-w-3xl mb-20">
 
-          <div className="max-w-3xl">
+          <p className="uppercase tracking-[0.3em] text-sm text-[#7a6a58] mb-5">
+            Product Range
+          </p>
 
-            <p className="uppercase tracking-[0.3em] text-sm text-[#7a5c3e] mb-6">
-              Our Products
-            </p>
-
-            <h2 className="text-4xl md:text-5xl font-bold leading-tight text-[#1f3b2d]">
-              Premium Cashew Products Crafted for Global Markets
-            </h2>
-
-          </div>
-
-          <button className="border border-black/10 px-6 py-3 rounded-full hover:bg-black/5 transition w-fit">
-            View All Products
-          </button>
+          <h2 className="text-5xl leading-tight font-medium text-[#1f1f1f]">
+            Premium cashew products processed for quality and consistency.
+          </h2>
 
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mt-16">
+        <div className="grid lg:grid-cols-2 gap-20 items-center">
 
-          <div className="rounded-3xl overflow-hidden bg-[#f5f1e8]">
-            
-            <div className="h-[320px] bg-[#d8c3a5]"></div>
+          <div className="relative h-[520px] rounded-[36px] overflow-hidden">
+            <Image
+              src={productImage}
+              alt="Cashew Products"
+              fill
+              className="object-cover"
+            />
+          </div>
 
-            <div className="p-8">
-              <h3 className="text-2xl font-semibold text-[#1f3b2d]">
+          <div className="space-y-10">
+
+            <div className="border-b border-black/10 pb-8">
+              <h3 className="text-3xl font-medium text-[#1f1f1f] mb-4">
                 Premium Whole Cashews
               </h3>
 
-              <p className="text-black/70 leading-7 mt-4">
-                Carefully processed whole cashew kernels maintaining superior
-                taste, texture, and quality consistency.
+              <p className="text-[#5c5c5c] leading-8">
+                Carefully processed whole cashews with consistent grading,
+                texture, and export-quality standards.
               </p>
             </div>
 
-          </div>
-
-          <div className="rounded-3xl overflow-hidden bg-[#f5f1e8]">
-            
-            <div className="h-[320px] bg-[#cbb89d]"></div>
-
-            <div className="p-8">
-              <h3 className="text-2xl font-semibold text-[#1f3b2d]">
-                Roasted Cashew Range
+            <div className="border-b border-black/10 pb-8">
+              <h3 className="text-3xl font-medium text-[#1f1f1f] mb-4">
+                Hygienic Processing
               </h3>
 
-              <p className="text-black/70 leading-7 mt-4">
-                Premium roasted variants designed for retail, hospitality, and
-                international food industries.
+              <p className="text-[#5c5c5c] leading-8">
+                Quality-focused handling and processing systems designed
+                for freshness, hygiene, and operational reliability.
               </p>
             </div>
 
-          </div>
-
-          <div className="rounded-3xl overflow-hidden bg-[#f5f1e8]">
-            
-            <div className="h-[320px] bg-[#b8a184]"></div>
-
-            <div className="p-8">
-              <h3 className="text-2xl font-semibold text-[#1f3b2d]">
-                Export Quality Grades
+            <div className="pb-8">
+              <h3 className="text-3xl font-medium text-[#1f1f1f] mb-4">
+                Packaging & Export
               </h3>
 
-              <p className="text-black/70 leading-7 mt-4">
-                Export-focused quality grading and packaging standards aligned
-                with international requirements.
+              <p className="text-[#5c5c5c] leading-8">
+                Packaging solutions optimized for safe transportation,
+                long shelf life, and international market requirements.
               </p>
             </div>
 
