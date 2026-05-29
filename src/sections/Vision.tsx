@@ -1,11 +1,36 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Reveal from "@/components/animations/Reveal";
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
 
 export default function Vision() {
   return (
     <section className="px-6 md:px-10 py-32 bg-[#f5f1e8]">
       <Reveal>
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
-          <div className="bg-white rounded-[2rem] p-12 hover:-translate-y-2 transition-all duration-500 shadow-lg">
+        <motion.div
+          className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={{
+            hidden: {},
+            visible: {
+              transition: {
+                staggerChildren: 0.2,
+              },
+            },
+          }}
+        >
+          <motion.div
+            variants={cardVariants}
+            transition={{ duration: 0.8 }}
+            className="bg-white rounded-[2rem] p-12 hover:-translate-y-2 transition-all duration-500 shadow-lg"
+          >
             <p className="uppercase tracking-[0.35em] text-sm text-[#7a5c3e] mb-6">
               Our Vision
             </p>
@@ -18,9 +43,13 @@ export default function Vision() {
               We aim to establish long-term trust through consistent product
               quality, ethical operations, and modern processing excellence.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="bg-[#1f3b2d] rounded-[2rem] p-12 text-white hover:-translate-y-2 transition-all duration-500 shadow-2xl">
+          <motion.div
+            variants={cardVariants}
+            transition={{ duration: 0.8 }}
+            className="bg-[#1f3b2d] rounded-[2rem] p-12 text-white hover:-translate-y-2 transition-all duration-500 shadow-2xl"
+          >
             <p className="uppercase tracking-[0.35em] text-sm text-[#d8c3a5] mb-6">
               Our Mission
             </p>
@@ -34,8 +63,8 @@ export default function Vision() {
               by modern infrastructure, responsible processing methods, and
               customer-focused business practices.
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </Reveal>
     </section>
   );

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import processingImage from "@/assets/images/indian-processing-workers.jpg";
 import Reveal from "@/components/animations/Reveal";
+import ParallaxImage from "@/components/animations/ParallaxImage";
 
 export default function Processing() {
   return (
@@ -15,7 +16,7 @@ export default function Processing() {
             </p>
 
             <h2 className="text-4xl md:text-5xl leading-tight font-medium text-[#1f1f1f]">
-              Hygienic processing systems designed for consistency and trust.
+              Processing systems focused on grading consistency, hygiene, and export readiness.
             </h2>
 
             <p className="text-[#5c5c5c] text-lg leading-8">
@@ -55,13 +56,17 @@ export default function Processing() {
           </div>
 
           <div className="relative h-[620px] rounded-[36px] overflow-hidden hover:-translate-y-2 transition-all duration-500">
-            <Image
-              src={processingImage}
-              alt="Processing Facility"
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover hover:scale-105 transition-all duration-700"
-            />
+            <ParallaxImage>
+              <Image
+                src={processingImage}
+                alt="Processing Facility"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover hover:scale-105 transition-all duration-700"
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
+            </ParallaxImage>
           </div>
 
         </div>

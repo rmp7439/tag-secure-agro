@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 import heroImage from "@/assets/images/hero-cashew.png";
 import floatingCashews from "@/assets/images/hero-cashew.png";
 import Reveal from "@/components/animations/Reveal";
@@ -8,13 +11,26 @@ export default function Hero() {
     <section className="relative px-6 md:px-10 py-32 overflow-hidden bg-[#f8f5f1]">
       <div className="absolute inset-0 bg-gradient-to-b from-[#f8f5f1] via-[#f6f2eb] to-[#f1ebe2] opacity-70"></div>
 
-      <Image
-        src={floatingCashews}
-        alt="Floating Cashews"
-        width={220}
-        height={220}
-        className="absolute top-10 right-[42%] opacity-10 rotate-12 animate-pulse w-auto h-auto"
-      />
+      <motion.div
+        className="absolute top-10 right-[42%]"
+        animate={{
+          y: [0, -20, 0],
+          rotate: [12, 16, 12],
+        }}
+        transition={{
+          duration: 6,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      >
+        <Image
+          src={floatingCashews}
+          alt="Floating Cashews"
+          width={220}
+          height={220}
+          className="opacity-10 w-auto h-auto"
+        />
+      </motion.div>
 
       <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
         <Reveal>
@@ -34,11 +50,11 @@ export default function Hero() {
             </p>
 
             <div className="flex gap-5 flex-wrap">
-              <button className="bg-[#1f3b2d] text-white px-8 py-4 rounded-full hover:-translate-y-1 transition-all duration-500 shadow-lg">
+              <button className="bg-[#1f3b2d] text-white px-8 py-4 rounded-full hover:-translate-y-1 hover:shadow-2xl transition-all duration-500 shadow-lg">
                 Explore Products
               </button>
 
-              <button className="border border-[#1f3b2d] px-8 py-4 rounded-full hover:bg-[#1f3b2d] hover:text-white transition-all duration-500">
+              <button className="border border-[#1f3b2d] px-8 py-4 rounded-full hover:bg-[#1f3b2d] hover:text-white hover:-translate-y-1 transition-all duration-500">
                 Contact Us
               </button>
             </div>
@@ -54,7 +70,7 @@ export default function Hero() {
               priority
               loading="eager"
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover hover:scale-105 transition-all duration-700"
+              className="object-cover scale-105 hover:scale-110 transition-all duration-1000"
             />
 
             <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>

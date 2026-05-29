@@ -1,8 +1,12 @@
 import Reveal from "@/components/animations/Reveal";
+import FloatingShape from "@/components/animations/FloatingShape";
 
 export default function CTA() {
   return (
     <section className="px-6 md:px-10 py-32 bg-[#1f3b2d] text-white overflow-hidden relative">
+      <FloatingShape size="w-80 h-80" className="-top-20 -left-20" />
+
+      <FloatingShape size="w-96 h-96" className="-bottom-32 -right-20" />
       <div className="absolute inset-0 bg-gradient-to-br from-[#1f3b2d] via-[#294636] to-[#16271e] opacity-95"></div>
 
       <Reveal>
