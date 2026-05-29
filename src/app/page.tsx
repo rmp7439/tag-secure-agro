@@ -1,28 +1,48 @@
 import Navbar from "@/components/Navbar";
-import Hero from "@/sections/Hero";
 import Footer from "@/components/Footer";
+
+import Hero from "@/sections/Hero";
 import About from "@/sections/About";
 import WhyChoose from "@/sections/WhyChoose";
 import Products from "@/sections/Products";
+import Workflow from "@/sections/Workflow";
 import Processing from "@/sections/Processing";
+import Infrastructure from "@/sections/Infrastructure";
+import Quality from "@/sections/Quality";
 import Export from "@/sections/Export";
-import Vision from "@/sections/Vision";
 import Stats from "@/sections/Stats";
+import Vision from "@/sections/Vision";
 import CTA from "@/sections/CTA";
 
 export default function Home() {
   return (
     <main className="bg-[#f5f1e8] text-[#1a1a1a]">
       <Navbar />
+
       <Hero />
+
       <About />
+
       <WhyChoose />
+
       <Products />
+
+      <Workflow />
+
       <Processing />
+
+      <Infrastructure />
+
+      <Quality />
+
       <Export />
-      <Vision />
+
       <Stats />
+
+      <Vision />
+
       <CTA />
+
       <Footer />
     </main>
   );
