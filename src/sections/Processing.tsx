@@ -1,5 +1,5 @@
 import Image from "next/image";
-import processingImage from "@/assets/images/processing.png";
+import processingImage from "@/assets/images/indian-processing-workers.jpg";
 import Reveal from "@/components/animations/Reveal";
 
 export default function Processing() {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import productImage from "@/assets/images/product-cashew.png";
+import productImage from "@/assets/images/cashew-pieces.jpg";
 import Reveal from "@/components/animations/Reveal";
 
 export default function Products() {
