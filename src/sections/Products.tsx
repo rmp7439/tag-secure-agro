@@ -41,8 +41,7 @@ export default function Products() {
                 </h3>
 
                 <p className="text-[#5c5c5c] leading-8">
-                  Carefully processed whole cashews with consistent grading,
-                  texture, and export-quality standards.
+                  Export-grade whole cashews available in premium grades including W180, W240, and W320, processed for consistency and international market requirements.
                 </p>
               </div>
 
@@ -52,8 +51,7 @@ export default function Products() {
                 </h3>
 
                 <p className="text-[#5c5c5c] leading-8">
-                  Quality-focused handling and processing systems designed
-                  for freshness, hygiene, and operational reliability.
+                  Cashew pieces including LWP, SWP, and BB grades suitable for food manufacturing, retail packaging, and industrial applications.
                 </p>
               </div>
 
@@ -63,8 +61,7 @@ export default function Products() {
                 </h3>
 
                 <p className="text-[#5c5c5c] leading-8">
-                  Packaging solutions optimized for safe transportation,
-                  long shelf life, and international market requirements.
+                  Export-ready packaging systems designed for product protection, efficient logistics, and global supply chain requirements.
                 </p>
               </div>
 
