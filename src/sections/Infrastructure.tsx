@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Reveal from "@/components/animations/Reveal";
 import ParallaxImage from "@/components/animations/ParallaxImage";
-import infraImage from "@/assets/images/processing-scale.jpg";
+import infraImage from "@/assets/images/cashew-sorting-machine.jpeg";
 
 export default function Infrastructure() {
   return (

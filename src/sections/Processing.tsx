@@ -1,5 +1,5 @@
 import Image from "next/image";
-import processingImage from "@/assets/images/indian-processing-workers.jpg";
+import processingImage from "@/assets/images/processing-facility.jpeg";
 import Reveal from "@/components/animations/Reveal";
 import ParallaxImage from "@/components/animations/ParallaxImage";
 
