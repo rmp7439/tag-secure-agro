@@ -42,7 +42,7 @@ export default function Footer() {
 
             <p>info@tagsecureagro.com</p>
             <p>+91 XXXXX XXXXX</p>
-            <p>Surat, Gujarat, India</p>
+            <p>Navsari, Gujarat, India</p>
 
           </div>
         </div>
