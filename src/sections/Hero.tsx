@@ -40,7 +40,8 @@ export default function Hero() {
             </p>
 
             <h1 className="text-5xl md:text-6xl leading-[1.1] font-medium text-[#1f1f1f] max-w-2xl">
-              Export-grade cashews backed by trusted processing systems.
+              Premium cashew processing built for quality, consistency, and
+              export readiness.
             </h1>
 
             <p className="text-lg text-[#5c5c5c] leading-8 max-w-xl">
@@ -48,6 +49,24 @@ export default function Hero() {
               processing, export-focused packaging, and operational systems
               designed for consistency and reliability.
             </p>
+
+            <div className="flex flex-wrap gap-3">
+              <div className="px-4 py-2 rounded-full bg-white border border-black/5 text-sm shadow-sm">
+                20+ Years Leadership
+              </div>
+
+              <div className="px-4 py-2 rounded-full bg-white border border-black/5 text-sm shadow-sm">
+                Premium Cashew Grades
+              </div>
+
+              <div className="px-4 py-2 rounded-full bg-white border border-black/5 text-sm shadow-sm">
+                Export Ready
+              </div>
+
+              <div className="px-4 py-2 rounded-full bg-white border border-black/5 text-sm shadow-sm">
+                Quality Focused
+              </div>
+            </div>
 
             <div className="flex gap-5 flex-wrap">
               <button className="bg-[#1f3b2d] text-white px-8 py-4 rounded-full hover:-translate-y-1 hover:shadow-2xl transition-all duration-500 shadow-lg">
@@ -74,6 +93,22 @@ export default function Hero() {
             />
 
             <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
+
+            <div className="absolute bottom-8 left-8 bg-white/95 backdrop-blur-xl rounded-[2rem] p-6 shadow-2xl max-w-[280px]">
+              <p className="text-xs uppercase tracking-[0.25em] text-[#7a5c3e] mb-3">
+                Operations
+              </p>
+
+              <h3 className="text-xl font-medium text-[#1f3b2d] mb-4">
+                Premium Cashew Processing
+              </h3>
+
+              <div className="space-y-2 text-sm text-black/70">
+                <p>• Whole Kernels</p>
+                <p>• Cashew Pieces</p>
+                <p>• Export Packaging</p>
+              </div>
+            </div>
           </div>
         </Reveal>
       </div>

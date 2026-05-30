@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/sections/Hero";
 import About from "@/sections/About";
 import WhyChoose from "@/sections/WhyChoose";
+import ProductGrades from "@/sections/ProductGrades";
 import Products from "@/sections/Products";
 import Workflow from "@/sections/Workflow";
 import Processing from "@/sections/Processing";
@@ -25,6 +26,8 @@ export default function Home() {
 
       <WhyChoose />
 
+      <ProductGrades />
+      
       <Products />
 
       <Workflow />
