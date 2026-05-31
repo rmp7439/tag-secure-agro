@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#111111] text-white px-10 py-24">
+    <footer id="contact" className="bg-[#111111] text-white px-10 py-24">
 
       <div className="max-w-7xl mx-auto grid lg:grid-cols-4 gap-16">
 

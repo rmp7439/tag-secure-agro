@@ -5,7 +5,7 @@ import ParallaxImage from "@/components/animations/ParallaxImage";
 
 export default function Export() {
   return (
-    <section className="px-6 md:px-10 py-32 bg-[#f8f5f1]">
+    <section id="export" className="px-6 md:px-10 py-32 bg-[#f8f5f1]">
       <Reveal>
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
           <div className="relative h-[620px] rounded-[36px] overflow-hidden order-2 lg:order-1 hover:-translate-y-2 transition-all duration-500">

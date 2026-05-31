@@ -5,7 +5,7 @@ import ParallaxImage from "@/components/animations/ParallaxImage";
 
 export default function Products() {
   return (
-    <section className="px-6 md:px-10 py-32 bg-[#f8f5f1]">
+    <section id="products" className="px-6 md:px-10 py-32 bg-[#f8f5f1]">
       <Reveal>
         <div className="max-w-7xl mx-auto">
           <div className="max-w-4xl mb-20">

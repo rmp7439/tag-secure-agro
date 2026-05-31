@@ -8,7 +8,7 @@ import Reveal from "@/components/animations/Reveal";
 
 export default function Hero() {
   return (
-    <section className="relative px-6 md:px-10 py-32 overflow-hidden bg-[#f8f5f1]">
+    <section id="home" className="relative px-6 md:px-10 py-32 overflow-hidden bg-[#f8f5f1]">
       <div className="absolute inset-0 bg-gradient-to-b from-[#f8f5f1] via-[#f6f2eb] to-[#f1ebe2] opacity-70"></div>
 
       <motion.div

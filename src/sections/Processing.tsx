@@ -5,7 +5,7 @@ import ParallaxImage from "@/components/animations/ParallaxImage";
 
 export default function Processing() {
   return (
-    <section className="px-6 md:px-10 py-32 bg-white">
+    <section id="processing" className="px-6 md:px-10 py-32 bg-white">
       <Reveal>
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
 
