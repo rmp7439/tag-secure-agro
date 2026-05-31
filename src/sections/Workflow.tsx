@@ -25,7 +25,7 @@ export default function Workflow() {
             </p>
           </div>
 
-          <div className="relative">
+          <div className="relative rounded-[2rem] overflow-hidden border border-black/5 bg-[#faf8f4] p-4 md:p-8">
             <Image
               src={workflowImage}
               alt="Cashew Processing Workflow"
