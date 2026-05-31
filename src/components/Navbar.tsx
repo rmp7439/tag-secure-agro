@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -9,6 +10,8 @@ const navItems = [
   { label: "Export", href: "#export" },
   { label: "Contact", href: "#contact" },
 ];
+
+const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -47,9 +50,7 @@ export default function Navbar() {
               href={item.href}
               className="relative group transition-all duration-300"
             >
-              <span className="group-hover:text-[#1f3b2d]">
-                {item.label}
-              </span>
+              <span className="group-hover:text-[#1f3b2d]">{item.label}</span>
 
               <span className="absolute -bottom-2 left-0 h-[2px] w-0 bg-[#1f3b2d] transition-all duration-300 group-hover:w-full"></span>
             </a>
@@ -62,7 +63,41 @@ export default function Navbar() {
         >
           Get In Touch
         </a>
+
+        <div className="md:hidden">
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="text-[#1f3b2d]"
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </nav>
+
+      {mobileMenuOpen && (
+        <div className="md:hidden px-6 pb-6 bg-[#f5f1e8]/95 backdrop-blur-xl border-t border-black/5">
+          <div className="flex flex-col gap-5 pt-5">
+            {navItems.map((item) => (
+              <a
+                key={item.label}
+                href={item.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-[#1f3b2d]"
+              >
+                {item.label}
+              </a>
+            ))}
+
+            <a
+              href="#contact"
+              onClick={() => setMobileMenuOpen(false)}
+              className="bg-[#1f3b2d] text-white px-5 py-3 rounded-full text-center"
+            >
+              Get In Touch
+            </a>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
